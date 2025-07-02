@@ -2,164 +2,186 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UX Designer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My UX Portfolio</title>
   <style>
-    :root {
-      --bg-color: #f7f3ef;
-      --accent-color: #6b5b95;
-      --highlight-color: #feb236;
-      --text-color: #333;
-      --card-bg: #fff;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
     body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f7f6;
+      color: #333;
     }
 
     header {
-      background: var(--accent-color);
-      color: white;
+      background-color: #ece5dd;
       padding: 2rem;
       text-align: center;
+      color: #444;
     }
 
     header h1 {
+      margin: 0;
       font-size: 2.5rem;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 1rem 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--accent-color);
-      font-weight: bold;
     }
 
     section {
       padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
 
-    #about {
-      background-color: #e0d4e6;
-      text-align: center;
-    }
-
-    #projects {
-      background-color: #fff;
+    h2 {
+      color: #5e4b47;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
     }
 
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
-      margin-top: 2rem;
     }
 
     .project-card {
-      background: var(--card-bg);
-      border-radius: 10px;
+      background-color: #fff;
+      border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
     }
 
     .project-card:hover {
-      transform: scale(1.05);
+      transform: translateY(-8px);
     }
 
-    .project-card img {
+    .project-image {
       width: 100%;
       height: 180px;
       object-fit: cover;
     }
 
-    .project-card h3 {
+    .project-content {
       padding: 1rem;
-      color: var(--accent-color);
     }
 
-    #contact {
-      background-color: #d1c4e9;
+    .project-content h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #403a3a;
+    }
+
+    .project-content p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .contact-info {
+      background-color: #ddd4c6;
+      padding: 2rem;
+      border-radius: 12px;
       text-align: center;
+    }
+
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: #3e3a36;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     footer {
-      background: var(--accent-color);
-      color: white;
       text-align: center;
       padding: 1rem;
+      font-size: 0.9rem;
+      color: #999;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Your Name - UX Designer</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Hello, I'm a UX Designer</h1>
+    <p>Designing delightful and meaningful experiences</p>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm a UX designer passionate about creating intuitive and meaningful user experiences. I blend research, design, and storytelling to craft interactive solutions that connect people and technology beautifully.</p>
+    <p>
+      I’m a passionate UX designer who loves crafting intuitive interfaces and thoughtful user journeys.
+      I specialize in wireframing, prototyping, and user research to bring human-centered solutions to life.
+    </p>
   </section>
 
   <section id="projects">
-    <h2>My Projects</h2>
+    <h2>Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Project One</h3>
+        <img src="project1.jpg" alt="Project 1" class="project-image">
+        <div class="project-content">
+          <h3>Project One</h3>
+          <p>Redesigned a mobile app to improve accessibility and reduce onboarding time by 35%.</p>
+        </div>
       </div>
+
       <div class="project-card">
-        <img src="project2.jpg" alt="Project 2">
-        <h3>Project Two</h3>
+        <img src="project2.jpg" alt="Project 2" class="project-image">
+        <div class="project-content">
+          <h3>Project Two</h3>
+          <p>Developed a responsive web dashboard for data visualization used by 5,000+ users monthly.</p>
+        </div>
       </div>
+
       <div class="project-card">
-        <img src="project3.jpg" alt="Project 3">
-        <h3>Project Three</h3>
+        <img src="project3.jpg" alt="Project 3" class="project-image">
+        <div class="project-content">
+          <h3>Project Three</h3>
+          <p>Conducted user interviews and built a prototype for a budgeting tool targeting college students.</p>
+        </div>
       </div>
+
       <div class="project-card">
-        <img src="project4.jpg" alt="Project 4">
-        <h3>Project Four</h3>
+        <img src="project4.jpg" alt="Project 4" class="project-image">
+        <div class="project-content">
+          <h3>Project Four</h3>
+          <p>Redesigned the checkout flow for an e-commerce site, reducing drop-offs by 20%.</p>
+        </div>
       </div>
+
       <div class="project-card">
-        <img src="project5.jpg" alt="Project 5">
-        <h3>Project Five</h3>
+        <img src="project5.jpg" alt="Project 5" class="project-image">
+        <div class="project-content">
+          <h3>Project Five</h3>
+          <p>Created a concept for a wellness app using emotion-driven design and mood tracking features.</p>
+        </div>
       </div>
+
       <div class="project-card">
-        <img src="project6.jpg" alt="Project 6">
-        <h3>Project Six</h3>
+        <img src="project6.jpg" alt="Project 6" class="project-image">
+        <div class="project-content">
+          <h3>Project Six</h3>
+          <p>Led a design sprint to develop a food delivery app with customizable dietary filters.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Let's connect and create something amazing together!</p>
-    <p>Email: your.email@example.com</p>
-    <p>LinkedIn: <a href="#" style="color: var(--accent-color);">YourProfile</a></p>
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    &copy; 2025 Your Name. All rights reserved.
   </footer>
+
 </body>
 </html>
