@@ -2,219 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | UX Designer</title>
-  <style>
-    :root {
-      --bg-color: #f9f7f6;
-      --accent-color: #5c5470;
-      --highlight-color: #feb236;
-      --text-color: #2c2c2c;
-      --subtle-text: #666;
-      --card-bg: #ffffff;
-      --card-shadow: rgba(0, 0, 0, 0.08);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Helvetica Neue', sans-serif;
-    }
-
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.75;
-    }
-
-    header {
-      background-color: var(--accent-color);
-      color: white;
-      padding: 3rem 1rem 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 1rem;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--highlight-color);
-    }
-
-    section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      color: var(--accent-color);
-      text-align: center;
-    }
-
-    #about {
-      background-color: #efe7f1;
-      text-align: center;
-    }
-
-    #about p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 1.1rem;
-    }
-
-    #projects {
-      background-color: #fff;
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .project-card {
-      background-color: var(--card-bg);
-      border-radius: 12px;
-      box-shadow: 0 6px 14px var(--card-shadow);
-      overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
-    }
-
-    .project-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .project-card h3 {
-      padding: 1rem 1rem 0.5rem;
-      color: var(--accent-color);
-      font-size: 1.25rem;
-    }
-
-    .project-card p {
-      padding: 0 1rem 1.5rem;
-      font-size: 0.95rem;
-      color: var(--subtle-text);
-    }
-
-    #contact {
-      background-color: #ece2f0;
-      text-align: center;
-    }
-
-    #contact p {
-      font-size: 1.1rem;
-      margin: 0.5rem 0;
-    }
-
-    #contact a {
-      color: var(--accent-color);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    #contact a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      background-color: var(--accent-color);
-      color: white;
-      text-align: center;
-      padding: 1.5rem 1rem;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name – Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-black text-white font-sans">
 
-  <header>
-    <h1>Hello,
-      I am Samruddhi – HCI and UX Designer</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a UX designer passionate about creating intuitive and meaningful user experiences. I blend research, design, and storytelling to craft interactive solutions that connect people and technology beautifully.</p>
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6">Hi, I'm [Your Name]</h1>
+    <p class="text-xl md:text-2xl text-gray-400 max-w-2xl">I'm a designer / developer who creates thoughtful, curious, and experimental work in digital spaces.</p>
   </section>
 
-  <section id="projects">
-    <h2>Selected Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <img src="project1.jpg" alt="Project One">
-        <h3>Project One</h3>
-        <p>A user-centric mobile app designed to simplify daily task management with voice integration.</p>
+  <!-- Projects Section -->
+  <section class="px-6 py-12 bg-neutral-900">
+    <h2 class="text-3xl font-semibold text-center mb-10">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project Card 1 -->
+      <div class="bg-neutral-800 p-6 rounded-2xl shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-bold mb-2">Project Title</h3>
+        <p class="text-gray-400 mb-4">Short description of what this project is about.</p>
+        <a href="#" class="text-blue-400 hover:underline">View Project →</a>
       </div>
-      <div class="project-card">
-        <img src="project2.jpg" alt="Project Two">
-        <h3>Project Two</h3>
-        <p>Redesign of an e-commerce website to improve user flow and accessibility compliance.</p>
+
+      <!-- Project Card 2 -->
+      <div class="bg-neutral-800 p-6 rounded-2xl shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-bold mb-2">Another Project</h3>
+        <p class="text-gray-400 mb-4">A short summary of this project and your role.</p>
+        <a href="#" class="text-blue-400 hover:underline">View Project →</a>
       </div>
-      <div class="project-card">
-        <img src="project3.jpg" alt="Project Three">
-        <h3>Project Three</h3>
-        <p>An interactive dashboard prototype for real-time data visualization in healthcare.</p>
+
+      <!-- Project Card 3 -->
+      <div class="bg-neutral-800 p-6 rounded-2xl shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-bold mb-2">Creative Exploration</h3>
+        <p class="text-gray-400 mb-4">An experimental or fun project you worked on.</p>
+        <a href="#" class="text-blue-400 hover:underline">View Project →</a>
       </div>
-      <div class="project-card">
-        <img src="project4.jpg" alt="Project Four">
-        <h3>Project Four</h3>
-        <p>A community platform concept aimed at connecting local creatives and freelancers.</p>
-      </div>
-      <div class="project-card">
-        <img src="project5.jpg" alt="Project Five">
-        <h3>Project Five</h3>
-        <p>A gamified learning interface created for middle school science education apps.</p>
-      </div>
-      <div class="project-card">
-        <img src="project6.jpg" alt="Project Six">
-        <h3>Project Six</h3>
-        <p>Conceptual wearable interface that helps track emotional wellness through colors.</p>
-      </div>
+
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Let's collaborate and build something impactful together.</p>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="#">YourProfile</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 text-sm">
+    © 2025 [Your Name]. All rights reserved.
   </footer>
 
 </body>
